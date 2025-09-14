@@ -69,11 +69,32 @@ A Retrieval-Augmented Generation (RAG) system for querying HR policies using a f
    uvicorn api:app --host 0.0.0.0 --port 8000 --reload
    ```
 
+   Sample cURL Command:
+
+   curl --location 'http://localhost:8000/query' \
+    --header 'Content-Type: application/json' \
+    --data '{
+   "query": "What is the company policy on remote work?",
+   "k": 5,
+   "max_new_tokens": 150,
+   "temperature": 0.7
+   }'
+
+   Sample Output:
+
+   <kbd>![Alt text](postman.jpg)<kbd>
+
 7. **Run Streamlit Frontend**:
+
    ```bash
    streamlit run app.py
    ```
+
    Access at `http://localhost:8501`.
+
+   Sample Output:
+
+   <kbd>![Alt text](streamlit_home.jpg)<kbd>
 
 ## Usage
 
@@ -81,6 +102,10 @@ A Retrieval-Augmented Generation (RAG) system for querying HR policies using a f
 - Enter a query (e.g., "What is the company policy on remote work?").
 - The system retrieves relevant policy chunks via FAISS and generates an answer using GPT-2.
 - A loading spinner displays during processing, and buttons disable to prevent duplicate requests.
+
+Sample Output:
+
+<kbd>![Alt text](streamlit.jpg)<kbd>
 
 ## Project Structure
 
