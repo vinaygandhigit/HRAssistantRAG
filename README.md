@@ -18,6 +18,11 @@ A Retrieval-Augmented Generation (RAG) system for querying HR policies using a f
 - **Streamlit**: Builds the interactive frontend (`app.py`).
 - **PyPDF2, python-docx**: Extracts text from PDF and DOCX files.
 
+## Architecture
+Below is the high-level architecture diagram of the HR Policy RAG system:
+
+![Architecture Diagram](architecture.png)
+
 ## Setup
 1. **Clone the Repository**:
    ```bash
