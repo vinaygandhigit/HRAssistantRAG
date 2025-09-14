@@ -1,11 +1,11 @@
-# HR Policy RAG Assistant (GPT2 + FAISS)
+# HR Policy RAG Assistant
 
 A Retrieval-Augmented Generation (RAG) system for querying HR policies using a fine-tuned GPT-2 model and FAISS vector search. This project extracts text from policy documents (PDF, DOCX, TXT), builds a FAISS index for efficient retrieval, and provides a user-friendly Streamlit interface with a chat-like UI for answering policy-related questions.
 
 ## Features
 - **Document Processing**: Extracts text from HR policy files (PDF, DOCX, TXT) and chunks them for retrieval.
 - **Vector Search**: Uses FAISS and SentenceTransformers (`all-MiniLM-L6-v2`) for fast, semantic retrieval of relevant policy snippets.
-- **Fine-Tuned GPT-2**: Generates contextual answers using a fine-tuned GPT-2 model trained on policy data. **no open api key required**
+- **Fine-Tuned GPT-2**: Generates contextual answers using a fine-tuned GPT-2 model trained on policy data.
 - **FastAPI Backend**: Serves a RESTful API (`/query`) for querying the RAG pipeline.
 - **Streamlit UI**: A clean, white-themed chat interface with loading spinner and larger fonts, mimicking a modern assistant like Grok.
 - **Robust Error Handling**: Includes timeout handling, disabled buttons during processing, and clear feedback for users.
