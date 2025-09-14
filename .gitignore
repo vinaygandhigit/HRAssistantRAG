@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / RAG related files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / Packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# C/C++ extensions
+*.so
+
+# RAG Data files
+# Exclude raw data, processed data, and embeddings
+data/raw/
+data/processed/
+artifacts/embeddings/
+artifacts/vectorstore/
+
+# RAG specific directories and files
+# Models, caches, and logs
+models/
+trainedmodel/
+trainedmodelfinetuned/
+.cache/
+logs/
+checkpoints/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Project-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+
+# Jupyter Notebook files
+.ipynb_checkpoints
